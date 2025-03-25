@@ -14,6 +14,8 @@ graph=defaultdict(list)
 n,e=map(int,input().split())
 for i in range(e):
    #type ur code here
+    u,v=map(str,input().split(' '))
+    graph[u].append(v)
     graph[v].append(u)
 #print(graph)
 start='A'
